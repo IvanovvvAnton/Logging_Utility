@@ -65,3 +65,45 @@ This process allows you to keep up-to-date logs in the system, avoid file overfl
 [The functionality described above is implemented in the logging_panel.py file](logging_panel.py)
 
 This file is responsible for handling all logging and backup processes in the project. It ensures proper storage, management, and backup of log files, providing a reliable method for tracking system events, user actions, and authorization processes. The backup mechanism ensures that logs are periodically saved, preventing data loss and keeping the system’s logs organized and manageable.
+
+## 📜 Logging for WebInterface_MySQL
+
+Logging is an important part of the monitoring system, as it allows you to track all events and actions taking place in the system. In this part of the system, the necessary directories and files are created to store logs, and a log backup mechanism is implemented, which ensures data security and prevents data loss.
+
+### 📁 1. Log directories
+
+The system creates several key directories for convenient log storage.:
+
+- LOG_DIR: This is the main directory for storing all logs, where all files related to logging will be located.
+
+- DATES_DIR: A special directory designed to store information about the date of the last backup.
+
+- BACKUP_DIR: A directory for storing backup copies of logs.
+
+Creating these directories ensures that all data is properly organized and available for future reference.
+
+### 📝 2. Structure of log files
+
+Logging is organized in such a way that each type of event is recorded in a separate log file. The following files are used for this:
+
+- USERS_LOG: A log that records the actions of system users (for example, logging in, logging out, and making changes).
+
+- CONSOLE_LOG: A console message log containing system and administrative notifications.
+
+- WORK_LOG: The server's operation log, which records general events and errors related to the functioning of the system.
+
+- LOGIN_LOG: The log of authorizations, which contains information about login attempts, successful and unsuccessful.
+
+This structure allows you to quickly find the necessary information and facilitates the analysis of events in various aspects of the system.
+
+### 💾 3. Backup logs
+
+An important part of the system is log backup, which helps to avoid data loss in case of failures or other unforeseen situations. For this purpose, a function is provided that checks whether a certain amount of time has passed (for example, 30 days) since the last backup. If the deadline has passed, the system automatically creates backups of all logs, moving them to a special folder for backups and clearing the source files. This ensures that the old data will not interfere with the new logging and that all data will be archived.
+
+### ⏳ 4. Updating the date of the last backup
+
+After performing the backup, the system updates the date of the last backup in a special file. This allows you to accurately track when the last backup was made and avoid unnecessary repetition. This mechanism helps to control backup processes and keep data up-to-date.
+
+[The logging code is located in a separate file. logging_MySQL.py](logging_MySQL.py)
+
+This is responsible for integrating the system with the MySQL database. This file implements the logic for sending event data, such as user actions or system errors, directly to the database. This allows logs to be stored and processed centrally, improving information availability and providing a convenient way for further analysis and monitoring.
