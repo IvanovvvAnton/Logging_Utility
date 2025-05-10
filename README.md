@@ -107,3 +107,15 @@ After performing the backup, the system updates the date of the last backup in a
 [The logging code is located in a separate file. logging_MySQL.py](logging_MySQL.py)
 
 This is responsible for integrating the system with the MySQL database. This file implements the logic for sending event data, such as user actions or system errors, directly to the database. This allows logs to be stored and processed centrally, improving information availability and providing a convenient way for further analysis and monitoring.
+
+## 📌 Conclusion
+
+The logging system described in this project is an effective solution for monitoring and managing events in the system. It provides centralized storage, processing, and backup of logs, which contributes to the reliability, security, and convenience of data analysis.
+
+The creation of specialized directories for storing logs and backups allows you to organize the data structure and ensure their safety. Logging is divided into several types of files, which helps to track various types of events, such as user actions, system events, and errors. This simplifies the search and analysis of data, as well as increases the transparency of the system.
+
+In addition, integration with the MySQL database, implemented in a separate file logging_MySQL.py , allows centralized storage of all logs, improving the availability of information for further analysis and monitoring. This approach to logging makes it easy to scale the system and improves the processing of large amounts of data.
+
+The log backup process is regularly updated to help prevent data loss and keep information up-to-date. Updating the date of the last backup in the file allows you to control the frequency of backups and keep logs up to date.
+
+Thus, this logging and backup system not only ensures reliable data storage, but also guarantees their security, improving the capabilities for monitoring and analyzing the system.
