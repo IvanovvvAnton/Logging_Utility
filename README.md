@@ -1,5 +1,25 @@
 # Logging_Utility
 
+## 📋 Table of Contents
+
+### 📜 Logging for Monitoring Panel
+1. [📂 Directory Structure](#-1-creating-log-directories)
+2. [🗂️ Log File Structure](#-2-structure-of-log-files)
+3. [📝 Universal Logging Function](#-3-universal-logging-function)
+4. [🔏 Specialized Logging Functions](#-4-functions-for-writing-to-various-logs)
+5. [💾 Log Backup System](#-5-backup-logs)
+6. [🕒 Backup Date Tracking](#-6-updating-the-date-of-the-last-backup)
+7. [Implementation File](#implementation-file)
+
+### 📜 Logging for WebInterface_MySQL
+1. [📁 Directory Organization](#-1-log-directories)
+2. [📝 Log File Types](#-2-structure-of-log-files)
+3. [💾 Backup Mechanism](#-3-backup-logs)
+4. [⏳ Backup Date Management](#-4-updating-the-date-of-the-last-backup)
+5. [Database Integration](#database-integration)
+
+### 📌 Conclusion
+
 ## 📜 Logging for Monitoring Panel
 
 Logging function designed for the system's dashboard. It provides collection, storage, and management of logs of various types of events occurring in the system, such as user authorization, system events, console messages, and user actions. Logging is performed in specially organized files, which allows you to effectively monitor and analyze the operation of the system. Backup of logs is also provided, which guarantees the safety of data and allows you to regularly update log files to prevent them from overflowing.
