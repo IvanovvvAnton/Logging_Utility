@@ -2,20 +2,20 @@
 
 ## 📋 Table of Contents
 
-1. [Logging for monitoring panel](#-logging-for-monitoring-panel-1)
+1. [Logging for monitoring panel](#-logging-for-monitoring-panel)
    - [Creating log directories](#-1-creating-log-directories)
    - [Structure of log files](#%EF%B8%8F-2-structure-of-log-files)
    - [Universal logging function](#-3-universal-logging-function)
    - [Functions for writing to various logs](#-4-functions-for-writing-to-various-logs)
    - [Backup logs](#-5-backup-logs)
    - [Updating the backup date](#-6-updating-the-date-of-the-last-backup)
-3. [Logging for webinterface MySQL](#-logging-for-webinterface_mysql-1)
+3. [Logging for Web Interface MySQL](#-logging-for-webinterface_mysql)
    - [Log directories](#-1-log-directories)
    - [Structure of log files](#-2-structure-of-log-files)
    - [Backup logs](#-3-backup-logs)
    - [Updating the backup date](#-4-updating-the-date-of-the-last-backup)
-4. [Conclusion](#-conclusion-1)
-5. [Authors](#-4-functions-for-writing-to-various-logs)
+4. [Conclusion](#-conclusion)
+5. [Authors](#authors)
 
 
 
