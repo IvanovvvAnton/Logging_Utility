@@ -2,23 +2,22 @@
 
 ## 📋 Table of Contents
 
-### 📜 Logging for Monitoring Panel
-1. [📂 Directory Structure](#-1-creating-log-directories)
-2. [🗂️ Log File Structure](#-2-structure-of-log-files)
-3. [📝 Universal Logging Function](#-3-universal-logging-function)
-4. [🔏 Specialized Logging Functions](#-4-functions-for-writing-to-various-logs)
-5. [💾 Log Backup System](#-5-backup-logs)
-6. [🕒 Backup Date Tracking](#-6-updating-the-date-of-the-last-backup)
-7. [Implementation File](#implementation-file)
+1. [Logging for monitoring panel](#-logging-for-monitoring-panel-1)
+   - [Creating log directories](#-1-creating-log-directories)
+   - [Structure of log files](#%EF%B8%8F-2-structure-of-log-files)
+   - [Universal logging function](#-3-universal-logging-function)
+   - [Functions for writing to various logs](#-4-functions-for-writing-to-various-logs)
+   - [Backup logs](#-5-backup-logs)
+   - [Updating the backup date](#-6-updating-the-date-of-the-last-backup)
+3. [Logging for webinterface MySQL](#-logging-for-webinterface_mysql-1)
+   - [Log directories](#-1-log-directories)
+   - [Structure of log files](#-2-structure-of-log-files)
+   - [Backup logs](#-3-backup-logs)
+   - [Updating the backup date](#-4-updating-the-date-of-the-last-backup)
+4. [Conclusion](#-conclusion-1)
+5. [Authors](#-4-functions-for-writing-to-various-logs)
 
-### 📜 Logging for WebInterface_MySQL
-1. [📁 Directory Organization](#-1-log-directories)
-2. [📝 Log File Types](#-2-structure-of-log-files)
-3. [💾 Backup Mechanism](#-3-backup-logs)
-4. [⏳ Backup Date Management](#-4-updating-the-date-of-the-last-backup)
-5. [Database Integration](#database-integration)
 
-### 📌 Conclusion
 
 ## 📜 Logging for Monitoring Panel
 
@@ -139,3 +138,7 @@ In addition, integration with the MySQL database, implemented in a separate file
 The log backup process is regularly updated to help prevent data loss and keep information up-to-date. Updating the date of the last backup in the file allows you to control the frequency of backups and keep logs up to date.
 
 Thus, this logging and backup system not only ensures reliable data storage, but also guarantees their security, improving the capabilities for monitoring and analyzing the system.
+
+# Authors
+If you have any questions, you can ask them to us by writing to us at email:
+- ivanovvvvvvvanton3829@gmail.com
